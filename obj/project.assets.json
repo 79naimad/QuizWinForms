@@ -1,0 +1,133 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "QuizBS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/QuizBS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuizBS.Common.dll": {}
+        }
+      },
+      "QuizBS.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "QuizBS.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/QuizBS.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuizBS.DataAccess.dll": {}
+        }
+      },
+      "QuizBS.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "QuizBS.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/QuizBS.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuizBS.ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuizBS.Common/1.0.0": {
+      "type": "project",
+      "path": "../QuizBSCommon/QuizBS.Common.csproj",
+      "msbuildProject": "../QuizBSCommon/QuizBS.Common.csproj"
+    },
+    "QuizBS.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../QuizBSDataAccess/QuizBS.DataAccess.csproj",
+      "msbuildProject": "../QuizBSDataAccess/QuizBS.DataAccess.csproj"
+    },
+    "QuizBS.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../QuizBS.ViewModel/QuizBS.ViewModel.csproj",
+      "msbuildProject": "../QuizBS.ViewModel/QuizBS.ViewModel.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "QuizBS.DataAccess >= 1.0.0",
+      "QuizBS.ViewModel >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBS\\QuizBS.csproj",
+      "projectName": "QuizBS",
+      "projectPath": "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBS\\QuizBS.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBS\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBS.ViewModel\\QuizBS.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBS.ViewModel\\QuizBS.ViewModel.csproj"
+            },
+            "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBSDataAccess\\QuizBS.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Desktop\\QuizBS\\QuizBSDataAccess\\QuizBS.DataAccess.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

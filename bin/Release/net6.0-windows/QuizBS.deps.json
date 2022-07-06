@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "QuizBS/1.0.0": {
+        "dependencies": {
+          "QuizBS.DataAccess": "1.0.0",
+          "QuizBS.ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "QuizBS.dll": {}
+        }
+      },
+      "QuizBS.Common/1.0.0": {
+        "runtime": {
+          "QuizBS.Common.dll": {}
+        }
+      },
+      "QuizBS.DataAccess/1.0.0": {
+        "dependencies": {
+          "QuizBS.Common": "1.0.0"
+        },
+        "runtime": {
+          "QuizBS.DataAccess.dll": {}
+        }
+      },
+      "QuizBS.ViewModel/1.0.0": {
+        "dependencies": {
+          "QuizBS.Common": "1.0.0"
+        },
+        "runtime": {
+          "QuizBS.ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuizBS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuizBS.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuizBS.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuizBS.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
